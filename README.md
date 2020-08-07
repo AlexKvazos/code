@@ -13,3 +13,9 @@ Write a program able to print first 20 numbers of the fibonacci series and and i
 ## Apa Yapa
 Write a program that prints the numbers from 1 to 100, replace multiples of 3 with the word "Apa",
 multiples of 5 with "Yapa", and for multiples of both print "ApaYapa"
+
+## Employees list
+A simple Employee list app has been provided, for this exercise your expertise is required to debug, optimize, organize and standardize the code based on the best practices you may know.
+
+## Unit testing
+A single page app has been created, add as many unit tests as you see fit.
