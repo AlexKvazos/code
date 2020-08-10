@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const NewTodo = (props) => {
-    const [enteredText, setEnteredText] = useState("");
 
     const addTodoHandler = (event) => {
         event.preventDefault();
