@@ -27,3 +27,7 @@ A single page app has been created, add as many unit tests as you see fit.
 ## TODOs App
 
 A simple TODO list app has been provided. You will have to make sure the app is meeting the expected behavior, doing the necessary fixes.
+
+## Front End
+
+A simple React app that requires some added functionality and UI styling.   
