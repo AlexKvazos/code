@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Todos from './components/employees';
+import Todos from './employees';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 
