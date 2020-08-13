@@ -38,6 +38,10 @@ A simple React app that requires some added functionality and UI styling.
 
 A simple Employee list app has been provided, for this exercise your expertise is required to debug, optimize, organize and standardize the code based on the best practices you may know.
 
+#### Giphy Client
+
+A simple Giphy search client has been provided. Please display an unordered list of the giphy search results.
+
 #### Fibonacci
 
 Write a program able to print first 20 numbers of the fibonacci series and and input that will perform at least 1 of the 2 following options:
