@@ -9,13 +9,13 @@ Below you will find a list of different **cod**ing **ex**ercises, read the summa
     - Is better to have a few great ideas than a lot of poor quality solutions :) 
     
 ### Instructions:
-    - Clone this repository: git clone https://github.com/rudypalacios/codex.git
+    - Clone this repository: git clone https://github.com/rudypalacios/AUTOMATED_REPO_NAME.git
     - Create a new brach from master and name it as <firstname-lastname>. i.e. git checkout -b john-doe
     - In the new branch solve the exercises you picked
     - Once you are done create a pull request pointing to develop branch
     - If you picked the BONUS code_review exercise, resolve it directly in the pull request
 ### Consider:
-    - You must share your screeng during the test
+    - You must share your screen during the test
     - You can search any information you want on Internet
     - If you have questions about any exercise feel free to ask the interviewer(s)
 
@@ -44,14 +44,14 @@ A simple Giphy search client has been provided. Please display an unordered list
 
 #### Fibonacci
 
-Write a program able to print first 20 numbers of the fibonacci series and and input that will perform at least 1 of the 2 following options:
+Write a program able to print, in a React view with navigation, the first 20 numbers of the fibonacci series and add an input that will perform at least 1 of the 2 following options:
 
 1. Test if the input's value is part of the series.
 2. Get the Nth number of the series.
 
 #### Apa Yapa
 
-Write a program that prints the numbers from 1 to 100, replace multiples of 3 with the word "Apa",
+Write a program that prints, in a React view with navigation, the numbers from 1 to 100, replace multiples of 3 with the word "Apa",
 multiples of 5 with "Yapa", and for multiples of both print "ApaYapa"
 
 ## BONUS: Code review
