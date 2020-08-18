@@ -12,13 +12,12 @@
 # Code review exercise and Readme will be copied and modified by default
 #
 
-# You can use my repository to push candidate's repository or add your own details here
-GITHUB_USER="rudypalacios"
-PERSONAL_TOKEN="d75682a99bed8f4abd3d107c5c2b96e0280a7e53"
-
 # Process starts
+read -p 'Github.com username: ' GITHUB_USER
+
 AUTOMATED_REPO_NAME=`sed -n "$RANDOM p" /usr/share/dict/words`
-CREATE_REPO_RESPONSE=$(curl -H "Authorization: token ${PERSONAL_TOKEN}" https://api.github.com/user/repos -d "{\"name\":\"${AUTOMATED_REPO_NAME}\"}")
+CREATE_REPO_RESPONSE=$(curl -u ${GITHUB_USER} https://api.github.com/user/repos -d "{\"name\":\"${AUTOMATED_REPO_NAME}\", \"private\":true}")
+
 CLONE_URL=$(echo "${CREATE_REPO_RESPONSE}" | jq .clone_url)
 
 # Exit on error
@@ -43,14 +42,16 @@ $CODE_REVIEW_REPO
 
 
 # Create Readme in new repo with token replaced
-sed "s/AUTOMATED_REPO_NAME/${AUTOMATED_REPO_NAME}/g" README.md > "${NEW_REPO_FOLDER}/README.md"
+sed "s/AUTOMATED_REPO_NAME/${GITHUB_USER}\/${AUTOMATED_REPO_NAME}/g" README.md > "${NEW_REPO_FOLDER}/README.md"
 
 REPO_URL="https://github.com/${GITHUB_USER}/${AUTOMATED_REPO_NAME}.git"
 
 cd $NEW_REPO_FOLDER
 git init
+# Adding automated user as source to protect privacy
+git config user.email "${AUTOMATED_REPO_NAME}@nodomain23.com"
 git add .
-git ci -a -m "Initial commit"
+git commit -a -m "Initial commit"
 git remote add origin ${REPO_URL}
 git push -u origin master
 

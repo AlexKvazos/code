@@ -9,7 +9,7 @@ Below you will find a list of different **cod**ing **ex**ercises, read the summa
     - Is better to have a few great ideas than a lot of poor quality solutions :) 
     
 ### Instructions:
-    - Clone this repository: git clone https://github.com/rudypalacios/AUTOMATED_REPO_NAME.git
+    - Clone this repository: git clone https://github.com/AUTOMATED_REPO_NAME.git
     - Create a new brach from master and name it as <firstname-lastname>. i.e. git checkout -b john-doe
     - In the new branch solve the exercises you picked
     - Once you are done create a pull request pointing to develop branch
