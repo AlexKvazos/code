@@ -12,7 +12,7 @@ Below you will find a list of different **cod**ing **ex**ercises, read the summa
     - Clone this repository: git clone https://github.com/AUTOMATED_REPO_NAME.git
     - Create a new brach from master and name it as <firstname-lastname>. i.e. git checkout -b john-doe
     - In the new branch solve the exercises you picked
-    - Once you are done create a pull request pointing to develop branch
+    - Once you are done create a pull request pointing to master branch
     - If you picked the BONUS code_review exercise, resolve it directly in the pull request
 ### Consider:
     - You must share your screen during the test
